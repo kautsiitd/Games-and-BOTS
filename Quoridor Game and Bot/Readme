@@ -1,0 +1,20 @@
+Steps to run this game:
+1. open three terminals seprately in ubuntu
+2. run "python TkBoard.py" in one terminal
+3. run "./run1.sh 127.0.0.1 12345" in second terminal
+For BOT v/s BOT
+4. run "./run1.sh 127.0.0.1 12345" in third terminal
+For BOT v/s Human
+4. run "./human.sh 127.0.0.1 12345" in third terminal
+	For Bot v/s human play only:
+		Sending moves to the server:
+			The format for sending a move is: moveType row column
+			moveType: 0 for moving the pawn
+			1 for horizontal wall
+			2 for vertical wall
+			NOTE: when you send the row and column for wall, you are specifying the center of the wall. So values for row and
+			column will be in the range [2,9]A pawn can move only one step at a time and cannot move diagonally. If the opponent’s pawn is on the way, your
+			pawn can jump over the opponent’s pawn. In such a case, you need to specify the values for the final position. If you
+			specify the position where the opponent’s pawn is present, it will be considered as an invalid move.
+			e.g. If A is at (2,5) and B is at (3,5) and I need to make a move that jumps over B, then I need to send (4,5) to the
+			server and not (3,5). Sending (3, 5) will be considered invalid.

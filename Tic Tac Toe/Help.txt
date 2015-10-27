@@ -1,0 +1,10 @@
+Run "python human\ vs\ computer.py" in terminal
+enter grid length: ex: 6
+enter Winning length: ex: 5
+
+Note: This Tic Tac has slightly different rules than regular one
+
+Rules for winning:
+1. Etiher any column, any row or main diagonals have number of crosses or circles equal to winning length.
+2. Not necessary they would be continuous
+3. Best results in 6*6 grid with 5 winning length
