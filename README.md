@@ -13,7 +13,7 @@ Quoridor | 81    | 42               | 91            | 60
 
 ## AI Used
 
-Implemented **MiniMax and Alpha-Beta pruning** with optimized Heuristics and achieved **5-ply** on 9x9 board.
+Implemented **MiniMax with Alpha-Beta pruning** with optimized Heuristics and achieved **5-ply** on 9x9 board.
 
 Evaluation function consists of shortest distance from BOT to it's goal and opponent to it's goal, number of walls that BOT has and that opponent has, and there is also huge penalty/incentive for reaching the goal state. Parameters were constant in this implementation.
 
