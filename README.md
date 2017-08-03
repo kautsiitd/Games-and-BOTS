@@ -15,7 +15,7 @@ Implemented MiniMax and Alpha-Beta pruning with optimised Heuristics and achieve
   * **Grid Size:** It's variable size Tic Tac Toe. So you can choose grid size in which you want to play Tic Tac Toe against computer.
   * **Win Length:** You can also choose win length. Please follow rules section for more detail
 
-**Note:** I would suggest to play on **6x6 Board** (Grid Size: 6) with **Win Length: 5** for newer and unbiased experience. You can also play on **3x3 Board** (Grid Size: 3) with **Win Length: 3** but that would pretty standard one. ***Please follow Rules section because it's not normal Tic Tac Toe. ;)***
+**Note:** I would suggest to play on **6x6 Board** (Grid Size: 6) with **Win Length: 5** for newer and unbiased experience. You can also play on **3x3 Board** (Grid Size: 3) with **Win Length: 3** but that would be pretty standard one. ***Please follow Rules section because it's not normal Tic Tac Toe. ;)***
 
 **Dependencies:** Only python >= 2.7.3 is required. Other dependencies is already included in folder.
 
@@ -25,7 +25,7 @@ Implemented MiniMax and Alpha-Beta pruning with optimised Heuristics and achieve
 
 ## Rules To Win
 
-1. Either **any Column**, **any Row** have number of crosses or circles equal to **Win Length**.
+1. Either **any Column** or **any Row** have number of crosses or circles equal to **Win Length**.
 2. Either **Main Diagonals** have number of crosses or circles equal to **Win Length**.
 3. ***It's not necessary*** that while counting for Rule 1 or 2, ***they have to be continuous.***
 
