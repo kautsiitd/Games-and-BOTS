@@ -1,10 +1,3 @@
-# Quoridor
-Implemented MiniMax and Alpha-Beta pruning with optimised Heuristics and achieved 5-ply.
-
-<p align="center">
-<img src="GIFs/Quoridor.gif">
-</p>
-
 # Tic Tac Toe
 
 ## How to Use
@@ -32,8 +25,3 @@ Implemented MiniMax and Alpha-Beta pruning with optimised Heuristics and achieve
 # Need Help/Issues
 
 If you find some issue or require some help then you can report about it in [Issues](https://github.com/kautsiitd/Games-and-BOTS/issues).
-
-# 2048
-<p align="center">
-<img src="GIFs/2048.gif">
-</p>
