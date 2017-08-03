@@ -1,12 +1,14 @@
 from graphics import *
 import random
+import sys
 x=input('enter grid lenth:')
 def kanu(o):
         filled=0
         list4=[[0 for q in range(x)] for w in range(x)]
         list5=[[0 for p in range(x)] for l in range(x)]
         win = GraphWin("2048 Game", 100*(x+2), 100*(x+3))
-        di=Text(Point((50*x+100),10),"!!!! Welcome to 2048 !!!!")
+        di=Text(Point((50*x+100),20),"!!!! Welcome to 2048 !!!!")
+        di.setSize(20)
         di.draw(win)
         di.setStyle('bold italic')
         di.setTextColor("purple")
@@ -15,7 +17,7 @@ def kanu(o):
             ci.draw(win)
             ci.setWidth("4")
             ci.setOutline("blue")
-            ci.setFill("red2")
+            ci.setFill("yellow")
         def grid(i,j):
             while j!=x+1:
                 while i!=x+1:
@@ -32,7 +34,7 @@ def kanu(o):
             writing=Text(Point((100*(column+1)+50),(100*(row+2)-50)),number)
             writing.draw(win)
             writing.setStyle('bold')
-            writing.setTextColor("white")
+            writing.setTextColor("orange2")
             writing.setSize(36)
         def update(boardsize,list4,list1):
             xaxis=0
@@ -47,7 +49,7 @@ def kanu(o):
                                 main(xaxis+1,yaxis+1)
                     yaxis=yaxis+1
                 xaxis=xaxis+1
-            
+
         def bubble(listx,direction,x):
                 if direction == "left":
                         vertical=0
@@ -119,28 +121,33 @@ def kanu(o):
                                         listx[copy][horizontal]=templist[copy]
                                         copy=copy+1
                                 horizontal=horizontal+1
-        
+
         def replay(i):
-                ci = Rectangle(Point(100*(x),100*(x+2)-60), Point(100*x+100,100*(x+2)-10))
+                ci = Rectangle(Point(100*(x),100*(x+2)-60), Point(100*x+100,100*(x+2)-20))
                 ci.draw(win)
                 ci.setWidth("3")
                 ci.setOutline("blue")
-                d=Text(Point(100*x+50,100*(x+2)-40),"exit")
+                d=Text(Point(100*x+50,100*(x+2)-40),"EXIT")
                 d.draw(win)
-                d.setStyle('bold italic')
+                d.setStyle('bold')
+                d.setFace("times roman")
+                d.setSize(18)
                 d.setTextColor("red")
-                ci = Rectangle(Point(100,100*(x+2)-60), Point(200,100*(x+2)-10))
+                ci = Rectangle(Point(100,100*(x+2)-60), Point(250,100*(x+2)-20))
                 ci.draw(win)
                 ci.setWidth("3")
                 ci.setOutline("blue")
-                d=Text(Point(150,100*(x+2)-40),"replay")
+                d=Text(Point(175,100*(x+2)-40),"REPLAY")
                 d.draw(win)
-                d.setStyle('bold italic')
+                d.setStyle('bold')
+                d.setFace("times roman")
+                d.setSize(18)
                 d.setTextColor("red")
                 m=win.getMouse()
                 if 100*x<=m.x<=100*(x+1) and 100*(x+2)-60<=m.y<=100*(x+2)-20:
                         win.close()
-                elif 100<=m.x<=200 and 100*(x+2)-60<=m.y<=100*(x+2)-0:
+                        sys.exit()
+                elif 100<=m.x<=250 and 100*(x+2)-60<=m.y<=100*(x+2)-0:
                         win.close()
                         kanu(o+1)
                 else:
@@ -162,10 +169,10 @@ def kanu(o):
                     xaxs+=1
             move=input()
             if move == 8:
-                
+
                 bubble(list4,"up",x)
 
-                horizontalx=0    
+                horizontalx=0
                 while(horizontalx!=x):
                     verticaly=0
                     while(verticaly<x-1):
@@ -178,7 +185,7 @@ def kanu(o):
                         else:
                             verticaly=verticaly+1
                     horizontalx=horizontalx+1
-                    
+
                 bubble(list4,"up",x)
 
             elif move == 6:
@@ -202,7 +209,7 @@ def kanu(o):
 
             elif move == 4:
                 bubble(list4,"left",x)
-                    
+
                 verticaly=0
                 while(verticaly!=x):
                     horizontalx=0
@@ -210,18 +217,18 @@ def kanu(o):
                         if list4[verticaly][horizontalx]!=0 and list4[verticaly][horizontalx]==list4[verticaly][horizontalx+1]:
                             list4[verticaly][horizontalx]=2*list4[verticaly][horizontalx]
                             list4[verticaly][horizontalx+1]=0
-                            horizontalx=horizontalx+2 
+                            horizontalx=horizontalx+2
                             filled=filled-1
                             print "decreasing 1",filled
                         else:
                             horizontalx=horizontalx+1
                     verticaly=verticaly+1
-                    
+
                 bubble(list4,"left",x)
-                
+
             elif move == 2:
                 bubble(list4,"down",x)
-                    
+
                 horizontalx=0
                 while(horizontalx!=x):
                     verticaly=x-1
@@ -235,12 +242,12 @@ def kanu(o):
                         else:
                             verticaly=verticaly-1
                     horizontalx=horizontalx+1
-                    
+
                 bubble(list4,"down",x)
-                
+
             else:
-                  play(o+1,filled)  
-                    
+                  play(o+1,filled)
+
             i=random.randint(0,len(list4)-1)
             j=random.randint(0,len(list4)-1)
             filled=filled+1
@@ -274,6 +281,6 @@ def kanu(o):
         update(x,list4,list5)
 
         play(o+1,filled)
-        
+
         replay(1)
 kanu(1)
