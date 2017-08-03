@@ -20,7 +20,7 @@ Implemented MiniMax and Alpha-Beta pruning with optimised Heuristics and achieve
 **Dependencies:** Only python >= 2.7.3 is required. Other dependencies is already included in folder.
 
 <p align="center">
-<img src="GIFs/2048.gif">
+<img src="GIFs/Tic_Tac_Toe.gif">
 </p>
 
 ## Rules To Win
