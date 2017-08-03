@@ -28,7 +28,7 @@ There are couple of improvements that can be done over this implementation:
 * We can think of better Heuristics, like placing walls defensively or construct some special patterns of walls in specific conditions which will help you to not get blocked and increase shortest path for opponent.
 
 <p align="center">
-<img src="GIFs/Quoridor.gif">
+<img src="../GIFs/Quoridor.gif">
 </p>
 
 ## How to Use
