@@ -20,7 +20,7 @@ Implemented MiniMax and Alpha-Beta pruning with optimised Heuristics and achieve
 **Dependencies:** Only python >= 2.7.3 is required. Other dependencies is already included in folder.
 
 <p align="center">
-<img src="../GIFs/2048.gif">
+<img src="GIFs/2048.gif">
 </p>
 
 ## Rules To Win
@@ -29,11 +29,11 @@ Implemented MiniMax and Alpha-Beta pruning with optimised Heuristics and achieve
 2. Either **Main Diagonals** have number of crosses or circles equal to **Win Length**.
 3. ***It's not necessary*** that while counting for Rule 1 or 2, ***they have to be continuous.***
 
-# Need Help/Issues
-
-If you find some issue or require some help then you can report about it in [Issues](https://github.com/kautsiitd/Games-and-BOTS/issues).
-
 # 2048
 <p align="center">
 <img src="GIFs/2048.gif">
 </p>
+
+# Need Help/Issues
+
+If you find some issue or require some help then you can report about it in [Issues](https://github.com/kautsiitd/Games-and-BOTS/issues).
