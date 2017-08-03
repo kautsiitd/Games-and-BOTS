@@ -2,13 +2,12 @@
 
 ## Introduction
 
-Quoridor is a 2 or 4 player abstract strategy game. It is generally played on 9x9, 11x11 or 13x13 board. Each player has a pawn that begins at one side of the board, and the objective of the game is to move your pawn to the opposite side of the board. The twist on this simple goal is that each player has a certain number of fences that they can place anywhere on the board to hinder the other players progress. This makes the game interesting and difficult to play, because there are many possible moves and judging who is winning is not trivial. Here is comparison between Quoridor and Chess which makes this game harder relative to Chess:
+Quoridor is a 2 or 4 player abstract strategy game. It is generally played on 9x9, 11x11 or 13x13 board. Each player has a pawn that begins at one side of the board, and the objective of the game is to move your pawn to the opposite side of the board. The twist on this simple goal is that each player has a certain number of fences that they can place anywhere on the board to hinder the other players progress. This makes the game interesting and difficult to play, because there are many possible moves and judging who is winning is not trivial. Here is comparison between Quoridor and Chess which makes this game **harder relative to Chess**:
 
-Game     | Board | Space Complexity | Average Game  | Branching |
-         | Size  | (In log base 10) | Length(plies) | Factor    |
--------- | ----- | ---------------- | ------------- | --------- |
-Chess    | 64    | 47               | 70            | 35        |
-Quoridor | 81    | 42               | 91            | 60        |
+Game     | Board Size | Space Complexity (In log base 10) | Average Game Length (plies) | Branching Factor
+-------- |:-----:|:----------------:|:-------------:|:---------:
+Chess    | 64    | 47               | 70            | 35       
+Quoridor | 81    | 42               | 91            | 60       
 
 ***Source:*** https://en.wikipedia.org/wiki/Game_complexity
 
@@ -39,14 +38,10 @@ There are couple of improvements that can be done over this implementation:
 3. Run **./compile.sh** in any terminal to compile required files
 4. Run **python TkBoard.py** in first terminal
 5. Run **./run1.sh 127.0.0.1 12345** or **./client 127.0.0.1 12345** in second terminal
+6. ***For BOT v/s BOT*** Run **./run1.sh 127.0.0.1 12345** or **./client 127.0.0.1 12345** in third terminal
+6. ***For BOT v/s Human*** Run **./human.sh 127.0.0.1 12345"** in third terminal
 
-***For BOT v/s BOT***
-
-6. Run **./run1.sh 127.0.0.1 12345** or **./client 127.0.0.1 12345** in third terminal
-
-***For BOT v/s Human***
-
-6. Run **./human.sh 127.0.0.1 12345"** in third terminal and follow **Rules** section to look into how to play.
+and follow **Rules** section to look into how to play.
 
 **Dependencies:** Only python >= 2.7.3 is required. Other dependencies is already included in folder.
 
