@@ -67,6 +67,8 @@ The format for sending a move is: **MoveType Row Column**
 
 # Tic Tac Toe
 
+It's simple Tic Tac Toe game with little bit different rules(See *Rules To Win* section), of **nxn** board size where board size and win length is customizable. I am using simple **BFS over search space of possible moves** but in adHoc manner, in it's BOT's AI implementation which let me achieved **3-ply**.
+
 ## How to Use
 
 1. Clone this repo using *git clone https://github.com/kautsiitd/Games-and-BOTS.git* or directly download zip file from above.
