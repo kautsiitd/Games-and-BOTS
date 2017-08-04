@@ -12,9 +12,7 @@ This is a Single Player game in which final aim is to achieve a cell of value **
   * 2: Move all tiles Down
   * 4: Move all tiles Left
   * 6: Move all tiles Right
-  * 4: Move all tiles Up
-
-**Note:** I would suggest to play on **6x6 Board** (Grid Size: 6) with **Win Length: 5** for newer and unbiased experience. You can also play on **3x3 Board** (Grid Size: 3) with **Win Length: 3** but that would be pretty standard one. ***Please follow Rules section because it's not normal Tic Tac Toe. ;)***
+  * 8: Move all tiles Up
 
 **Dependencies:** Only python >= 2.7.3 is required. Other dependencies is already included in folder.
 
