@@ -72,7 +72,7 @@ It's simple Tic Tac Toe game with little bit different rules(See *Rules To Win* 
 ## How to Use
 
 1. Clone this repo using *git clone https://github.com/kautsiitd/Games-and-BOTS.git* or directly download zip file from above.
-2. Go to *Tic Tac Toe* folder in terminal and simply run **python human\ vs\ computer.py**.
+2. Go to *Tic Tac Toe* folder in terminal and simply run **python human\ vs\ computer.py** or run **python2 human\ vs\ computer.py** incase you are facing an Error because your default python command is targeting python 3.
 3. Enter required fields to start game:
   * **Grid Size:** It's variable size Tic Tac Toe. So you can choose grid size in which you want to play Tic Tac Toe against computer.
   * **Win Length:** You can also choose win length. Please follow rules section for more detail
